@@ -11,7 +11,7 @@ while cap.isOpened():
     if ret is True:
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         cv2.imshow('frame', gray)
-        cv2.waitKey(116)
+        cv2.waitKey(23)
     else:
         break
 
