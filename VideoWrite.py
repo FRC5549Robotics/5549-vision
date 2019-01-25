@@ -14,7 +14,6 @@ while True:
     ret, frame = cap.read()
     if ret == True:
         cv2.imshow('frame', frame)
-        frame = cv2.flip(frame, 1)
         out.write(frame)
 
         print(framenum)
@@ -23,12 +22,10 @@ while True:
             cap.release()
             out.release()
             cv2.destroyAllWindows()
+            break
     else:
         break
 
 end = timeit.default_timer()
 print("Total Execution Time: " + str(end-totaltime))
 print("Recording Time: " + str(end-start))
-cap.release()
-out.release()
-cv2.destroyAllWindows()
