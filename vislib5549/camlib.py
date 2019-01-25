@@ -2,7 +2,6 @@ import numpy as np
 import cv2
 import timeit
 
-
 class CamLib(object):
     class PlatformType:
         USB_CAM_LINUX = 1

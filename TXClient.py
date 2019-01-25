@@ -3,6 +3,7 @@ from vislib5549 import nettable as nt
 import networktables as nwt
 
 
+
 def client():
     SmartDash = nt.ConnectTable()
 
